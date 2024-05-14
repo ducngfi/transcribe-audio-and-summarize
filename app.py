@@ -30,12 +30,25 @@ def speech_to_text(input_audio_fn):
   # returns the transcripted text
   return transcript
 
+def save_transcription_to_file(transcription, output_filename):
+    # Write the transcription to a text file
+    with open(output_filename, "w") as text_file:
+        text_file.write(transcription)
 
 def main():
-  transcript = speech_to_text("test.m4a")
-  print("Transcription:")
-  print(transcript)
+  audio_file_path = "test.m4a"
+  output_text_file = "transcription.txt"
 
+  # Transcribe the audio file
+  transcript = speech_to_text(audio_file_path)
+
+  # Print the transcription
+  #print("Transcription:")
+  #print(transcript)
+
+  # Save the transcription to a text file
+  save_transcription_to_file(transcript, output_text_file)
+  print(f"Transcription saved to {output_text_file}")
 
 if __name__ == "__main__":
     main()
