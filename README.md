@@ -39,7 +39,7 @@ Before you begin, ensure you have met the following requirements:
 ## Usage
 
 1. **Prepare your audio file:**
-   Ensure your audio file is named `test.m4a` and placed in the root directory of the project. You can change the file name in the `main` function if needed.
+   Ensure your audio file is named `audio.mp3` and placed in the root directory of the project. You can change the file name in the `main` function if needed.
 
 2. **Run the application:**
    ```bash

@@ -83,7 +83,7 @@ def save_text_to_file(text, output_filename):
         text_file.write(text)
 
 def main():
-  audio_file_path = "test.m4a"
+  audio_file_path = "audio.mp3"
   transcription_file = "transcription.txt"
   summary_file = "summary.txt"
 
